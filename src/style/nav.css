@@ -1,0 +1,97 @@
+:root {
+  --light-blue: hsl(231, 69%, 60%);
+  --red: #fa5757;
+  --grey: hsl(229, 8%, 60%);
+  --dark-blue: hsl(229, 31%, 21%);
+  --white: #fff;
+  --light-grey: rgb(248, 247, 247);
+  --shadow: rgb(231, 231, 231);
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 150px;
+}
+
+.nav .logo-icon {
+  width: 50%;
+}
+
+.nav .nav-menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .nav-menu-items a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav .nav-menu-items a p {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+.nav .nav-menu-items a:hover p {
+  color: var(--red);
+}
+
+.nav .nav-menu-items .login-nav-item {
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-color: var(--red);
+}
+
+.nav .nav-menu-items .login-nav-item a p {
+  color: #fff;
+}
+
+.nav .nav-menu-items .login-nav-item:hover {
+  background-color: var(--white);
+  border: 2px solid var(--red);
+}
+
+.nav .nav-menu-items .login-nav-item:hover p {
+  color: var(--red);
+}
+
+@media screen and (max-width: 375px) {
+  .nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav .nav-menu-items {
+    display: none;
+  }
+  .nav .nav-menu-mobile-items {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #252b46;
+    z-index: 99;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

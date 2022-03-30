@@ -1,0 +1,83 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 100px;
+  min-height: 100px;
+  background-color: var(--dark-blue);
+}
+
+.footer .logo-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .logo-icon svg {
+  margin-left: 50px;
+}
+
+.footer .logo-icon p {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.footer .logo-icon p:hover {
+  color: var(--red);
+}
+
+.footer .social-logos {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.footer .social-logos .icons {
+  margin: 20px;
+}
+
+.footer .icons path:hover {
+  fill: var(--red);
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    height: 310px;
+  }
+  .footer .logo-icon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .logo-icon svg {
+    margin: 0;
+  }
+  .footer .logo-icon a {
+    margin: 20px;
+  }
+  .footer .social-logos {
+    width: 130px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

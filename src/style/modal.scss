@@ -1,0 +1,41 @@
+.modal-wrapper {
+    position: fixed;
+    left: 10%;
+    width: 80%;
+    height: 550px;
+    background-color: var(--light-blue);
+    border: 2px solid var(--light-grey);
+    z-index: 50;
+
+    img {
+        margin-left: 150px;
+        margin-top: 20px;
+    }
+
+    .info-box-modal {
+        position: absolute;
+        top: 35%;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        margin-right: 40px;
+
+        p {
+            margin-top: 20px;
+            color: aliceblue;
+        }
+    }
+
+    .buttons-box {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+
+        p {
+            font-size: 2em;
+            color: aliceblue;
+        }
+    }
+}
+

@@ -1,0 +1,131 @@
+.faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.faq a {
+  margin-top: 40px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: var(--light-blue);
+}
+
+.faq a span {
+  font-weight: 500;
+  color: var(--white);
+}
+
+.faq .faq-info {
+  width: 35%;
+  text-align: center;
+}
+
+.faq .faq-info h2 {
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.faq .faq-info p {
+  margin-bottom: 40px;
+}
+
+.accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 39.5%;
+  height: 40%;
+  border-top: 1px solid var(--grey);
+  cursor: pointer;
+}
+
+.accordion-item .accordion-title-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 570px;
+  min-height: 80px;
+}
+
+.accordion-item .accordion-title-item p {
+  color: #000;
+}
+
+.accordion-item .accordion-title-item img {
+  margin-right: 20px;
+}
+
+.accordion-item .accordion-title-item .rotate-arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-right: 20px;
+}
+
+.accordion-item .accordion-title-item:hover p {
+  color: var(--red);
+}
+
+.accordion-item .accordion-content p {
+  margin: 20px 0;
+}
+
+.accordion-item hr {
+  color: var(--light-grey);
+}
+
+@media screen and (max-width: 375px) {
+  .faq {
+    margin-top: 140%;
+  }
+  .faq .faq-info {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .faq .accordion {
+    border: none;
+  }
+  .faq .accordion .accordion-item {
+    width: 350px;
+  }
+  .faq .accordion .accordion-item .accordion-title-item {
+    font-size: 14px;
+  }
+  .faq .accordion .accordion-item img {
+    margin-right: 220px;
+  }
+  .faq .accordion .accordion-item .rotate-arrow {
+    margin-right: 220px;
+  }
+}
+/*# sourceMappingURL=faq.css.map */

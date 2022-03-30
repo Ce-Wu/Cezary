@@ -1,0 +1,148 @@
+@import 'colors.scss';
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 150px;
+
+  .logo-icon {
+    width: 50%;
+  }
+
+  .nav-menu-items {
+    display: flex;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      margin: 0 10px;
+
+      p {
+        padding: 10px 20px;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: var(--grey);
+      }
+    }
+
+    a:hover p {
+      color: var(--red);
+    }
+
+    .login-nav-item {
+      border-radius: 6px;
+      border: 2px solid transparent;
+      background-color: var(--red);
+
+      a {
+        p {
+          color: #fff;
+        }
+      }
+    }
+
+    .login-nav-item:hover {
+      background-color: var(--white);
+      border: 2px solid var(--red);
+    }
+
+    .login-nav-item:hover p {
+      color: var(--red);
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .nav {
+    justify-content: space-between;
+
+    .nav-menu-items {
+      display: none;
+    }
+
+    .nav-menu-mobile-items {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0, 0.85);
+      z-index: 99;
+      overflow: hidden;
+      
+      svg {
+        margin-top: 60px;
+      }
+
+      .logo-and-close-icons {
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          height: 5%;
+          margin-bottom: 30px;
+        }
+        
+        .nav-mobile-links {
+            width: 70%;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            overflow: hidden;
+        
+            a {
+                p {
+                    display: block;
+                    padding: 10px 100px;
+                    border-top: 1px solid rgba(235, 235, 235, 0.199);
+                    text-transform: uppercase;
+                    line-height: 50px;
+                    color: var(--white);
+                }
+            }
+            
+            .login-nav-item {
+          a {
+            p {
+              padding: 0 100px;
+              border: 2px solid var(--white);
+            }
+        }
+    }
+}
+      .social-logos-mobile {
+          svg {
+              margin: 20px;
+            }
+        }
+    }
+  }
+
+  
+}
+@media (min-width: 1200px) and (max-width: 2000px) {
+  .nav {  
+  .hamburger-menu {
+      display: none;
+    }
+  }
+}
+
+
+.show {
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.hide {
+    display: none;
+}
