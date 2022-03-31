@@ -6,9 +6,10 @@ function Modal() {
   const [modal, setModal] = useState(false)
 
   useEffect(() => {
-    const timer = setInterval(() => setModal(true), 30000)
-    return () => clearInterval(timer)
-  }, [modal])
+    const timer = setTimeout(() => setModal(true), 30000) 
+    return () => clearTimeout(timer)  
+    
+  }, [])
 
   const closeModal = () => {
     setModal(false)
@@ -31,8 +32,8 @@ function Modal() {
               </p>
               <a><span>{more}</span></a>
             </div>
-              <div className="buttons-box">
-                <p onClick={closeModal}>{close}</p>
+              <div className="buttons-box" onClick={closeModal}>
+                <span>{close}</span>
               </div>
           </div>
         </div>
