@@ -13,16 +13,16 @@ function Contact() {
   const [isValid, setIsValid] = useState(true);
   const [message, setMessage] = useState('');
 
-  const emailRegex = /\S+@\S+\.\S+/;
-
+  
   const validateEmail = (event) => {
+    const emailRegex = /\S+@\S+\.\S+/;
     const email = event.target.value;
-    if (emailRegex.test(email)) {
+    if (emailRegex.test(email) && email != '') {
       setIsValid(true);
-      setMessage('Your email looks good!');
+      setMessage('You can send email');
     } else {
       setIsValid(false);
-      setMessage('Please enter a valid email!');
+      setMessage("Whoops, make sure it's an email");
     }
   };
 
@@ -41,7 +41,11 @@ function Contact() {
         {message}
       </div>
       </div>
-        <button className='contact-button'><span>Contact Us</span></button>
+        <button 
+        className='contact-button'
+        >
+          <span>Contact Us</span>
+        </button>
     </div>
     </div>
   )
