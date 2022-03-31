@@ -53,12 +53,25 @@
   position: absolute;
   top: 20px;
   right: 20px;
+  border: 2px solid transparent;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: var(--light-blue);
   cursor: pointer;
 }
 
-.modal-wrapper .buttons-box p {
+.modal-wrapper .buttons-box span {
   font-size: 2em;
-  color: #000;
+  color: var(--white);
+}
+
+.modal-wrapper .buttons-box:hover {
+  background-color: #fff;
+  border: 2px solid var(--light-blue);
+}
+
+.modal-wrapper .buttons-box:hover span {
+  color: var(--light-blue);
 }
 
 .modal-wrapper .features-options-items::before {

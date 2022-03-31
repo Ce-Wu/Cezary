@@ -52,11 +52,24 @@
         position: absolute;
         top: 20px;
         right: 20px;
+        border: 2px solid transparent;
+        padding: 5px;
+        border-radius: 6px;
+        background-color: var(--light-blue);
         cursor: pointer;
 
-        p {
+        span {
             font-size: 2em;
-            color: #000;
+            color: var(--white);
+        }
+    }
+
+    .buttons-box:hover {
+        background-color: #fff;
+        border: 2px solid var(--light-blue);
+
+        span {
+            color: var(--light-blue);
         }
     }
 
