@@ -60,7 +60,7 @@
   fill: var(--red);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .footer {
     height: 310px;
   }

@@ -29,6 +29,7 @@
     .input-box {
         display: flex;
         input {
+            position: relative;
             width: 275px;
             height: 50px;
             padding: 15px;
@@ -37,6 +38,22 @@
    
             color: var(--grey);
             border: none;
+        }
+
+        .success {
+            color: rgb(14, 218, 14);
+        }
+        
+        .error {
+            position: absolute;
+            width: 276px;
+            height: 20px;
+            font-size: 10px;
+            padding: 5px 10px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            background-color: var(--red);
+            color: var(--white);
         }
 
         .contact-button {
@@ -64,7 +81,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
     .contact {
         .contact-counting {
             margin-top: 20px;
@@ -92,18 +109,5 @@
     }
 }
 
-.success {
-    color: rgb(14, 218, 14);
-}
 
-.error {
-    width: 276px;
-    height: 20px;
-    font-size: 10px;
-    padding: 5px 10px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    background-color: var(--red);
-    color: var(--white);
-}
 

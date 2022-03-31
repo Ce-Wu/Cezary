@@ -21,11 +21,21 @@
   padding: 10px 20px;
   border-radius: 6px;
   background-color: var(--light-blue);
+  border: 2px solid transparent;
 }
 
 .faq a span {
   font-weight: 500;
   color: var(--white);
+}
+
+.faq a:hover {
+  background-color: var(--white);
+  border: 2px solid var(--light-blue);
+}
+
+.faq a:hover span {
+  color: var(--light-blue);
 }
 
 .faq .faq-info {
@@ -95,6 +105,11 @@
   color: var(--red);
 }
 
+.accordion-item .accordion-content {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 .accordion-item .accordion-content p {
   margin: 20px 0;
 }
@@ -103,7 +118,7 @@
   color: var(--light-grey);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .faq {
     margin-top: 140%;
   }

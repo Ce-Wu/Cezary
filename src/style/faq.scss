@@ -11,11 +11,21 @@
     padding: 10px 20px;
     border-radius: 6px;
     background-color: var(--light-blue);
+    border: 2px solid transparent;
 
     span {
       font-weight: 500;
       color: var(--white);
     }
+  }
+
+  a:hover {
+    background-color: var(--white);
+    border: 2px solid var(--light-blue);
+  }
+
+  a:hover span{
+    color: var(--light-blue);
   }
 
   .faq-info {
@@ -73,6 +83,7 @@
   }
 
   .accordion-content {
+    transition: all .3s;
     p {
       margin: 20px 0;
     }
@@ -83,7 +94,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
     .faq{
         margin-top: 140%;
         .faq-info {

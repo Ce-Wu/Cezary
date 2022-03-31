@@ -120,7 +120,7 @@
   z-index: -1;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .main .simple-bookmark-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
